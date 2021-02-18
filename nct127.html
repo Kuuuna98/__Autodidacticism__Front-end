@@ -12,7 +12,6 @@
                 grid-template-columns: 150px 1fr;
             }
             #grid-detail{
-
                 grid-template-columns: 1fr 500px;
             }
             h1{
@@ -26,10 +25,11 @@
                 color:black;
                 text-decoration: none;
             }
-            img{
-                width: 50%;
+            #grid-detail img{
+                width: 635px;
                 float: left;
-                padding-right: 10px;
+                padding-top: 15px;
+                padding-right: 15px;
             }
             #grid-full ol{
                 border-right: 1px solid gray;
@@ -37,6 +37,34 @@
                 margin: 0px;
                 padding: 35px;
                 padding-right: 15px;
+            }
+
+            @media(max-width:1280px){
+                #grid-detail img{
+                    float:none;
+            }
+            }
+
+            @media(max-width:800px){
+            #grid-full{
+                display: grid;
+                grid-template-columns: 150px 1fr;
+            }
+            #grid-detail img{
+                width: 100%;
+            }
+            a {
+                color:black;
+                text-decoration: none;
+            }
+            
+            #grid-full ol{
+                border-right: 1px solid gray;
+                width:80px;
+                margin: 0px;
+                padding: 35px;
+                padding-right: 15px;
+            }
             }
         </style>
     </head>
@@ -58,7 +86,7 @@
                 <li><a href="10.html">HAECHAN</a></li>
             </ol>
             <div id="grid-detail">
-                <p><img src="image/NCT_127_regular.jpg" width="100%"></p>
+                <img src="image/NCT_127_regular.jpg">
                 <div>
                     <p>NCT stands for <strong>Neo Culture Technology</strong>.<br>
                         '127' of <a href="https://www.smtown.com/search?keyword=NCT%20127&star_idx=10033" 
