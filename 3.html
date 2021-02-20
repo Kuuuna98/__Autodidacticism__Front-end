@@ -32,7 +32,7 @@
                 text-decoration: none;
             }
             img{
-                width: 25%;
+                width: 300px;
                 float: left;
                 padding: 10px;
             }
@@ -45,6 +45,30 @@
             #active {
                 color:greenyellow;
                 text-decoration: none;
+            }
+            @media(max-width:800px){
+            #grid-full{
+                display: grid;
+                grid-template-columns: 150px 1fr;
+            }
+            #grid-detail img{
+                float:none;
+            }
+            #grid-detail p{
+                padding-left: 10px;
+            }
+            a {
+                color:black;
+                text-decoration: none;
+            }
+            
+            #grid-full ol{
+                border-right: 1px solid gray;
+                width:80px;
+                margin: 0px;
+                padding: 35px;
+                padding-right: 15px;
+            }
             }
         </style>
     </head>
@@ -65,7 +89,7 @@
                 <li><a href="9.html">MARK</a></li>
                 <li><a href="10.html">HAECHAN</a></li>   
             </ol>
-            <div>
+            <div id="grid-detail">
                 <h1 id="name">TAEYONG (이태용)</h1>
                 <img src="image/태용.jpeg">
                 <p>
