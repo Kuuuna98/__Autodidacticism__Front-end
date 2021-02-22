@@ -31,7 +31,7 @@
                 color:black;
                 text-decoration: none;
             }
-            img{
+            #grid_detail img{
                 width: 300px;
                 float: left;
                 padding: 10px;
@@ -47,27 +47,24 @@
                 text-decoration: none;
             }
             @media(max-width:800px){
-            #grid-full{
-                display: grid;
-                grid-template-columns: 150px 1fr;
+            #nct127{
+                border-bottom:none;
             }
-            #grid-detail img{
+            #grid_full{
+                display: block;
+            }
+            #grid_detail img{
                 float:none;
             }
-            #grid-detail p{
+            #grid_detail p{
                 padding-left: 10px;
             }
             a {
                 color:black;
                 text-decoration: none;
             }
-            
-            #grid-full ol{
-                border-right: 1px solid gray;
-                width:80px;
-                margin: 0px;
-                padding: 35px;
-                padding-right: 15px;
+            #grid_full ol{
+                border-right: none;
             }
             }
         </style>
@@ -89,7 +86,7 @@
                 <li><a href="9.html" class="list">MARK</a></li>
                 <li><a href="10.html" class="list">HAECHAN</a></li>   
             </ol>
-            <div id="grid-detail">
+            <div id="grid_detail">
                 <h1 id="name">TAEIL (문태일)</h1>
                 <img src="image/태일.jpeg">
                 <p>
