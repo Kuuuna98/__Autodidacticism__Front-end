@@ -31,16 +31,19 @@
                 padding-top: 15px;
                 padding-right: 15px;
             }
-            #grid_full ol{
+            #wide_memberlist{
                 border-right: 1px solid gray;
                 width:80px;
                 margin: 0px;
                 padding: 35px;
                 padding-right: 15px;
             }
+            #narrow_memberlist{
+                display: none;
+            }
 
             @media(max-width:1280px){
-                #grid_detail img{
+            #grid_detail img{
                     float:none;
             }
             }
@@ -51,6 +54,8 @@
             }
             #grid_detail img{
                 width: 100%;
+                padding-top: 0px;
+                padding-right: 0px;
             }
             a {
                 color:black;
@@ -59,14 +64,13 @@
             h1{
                 border-bottom: none;
             }
-            #grid_detail img{
-                padding-top: 0px;
-                padding-right: 0px;
+            #wide_memberlist{
+                display: none;
             }
-            #grid_full ol{
-                border-right: none;
-                padding-top: 10px;
-                padding-bottom: 10px;
+            #narrow_memberlist{
+                display: block;
+                margin-left: 10px;
+                margin-bottom: 10px;
             }
             }
         </style>
@@ -76,7 +80,19 @@
     <body>
         <h1><a href="nct127.html" style="color:greenyellow;text-decoration:underline overline dotted">NCT 127</a></h1>
         <div id="grid_full">
-             <ol>
+            <div id="narrow_memberlist">
+                <a href="1.html">TAEIL</a>  /
+                <a href="2.html">JOHNNY</a> /
+                <a href="3.html">TAEYONG</a>    /
+                <a href="4.html">YUTA</a>   /
+                <a href="5.html">DOYOUNG</a></br>
+                <a href="6.html">JAEHYUN</a>    /
+                <a href="7.html">WINWIN</a> /
+                <a href="8.html">JUNGWOO</a>    /
+                <a href="9.html">MARK</a>   /
+                <a href="10.html">HAECHAN</a>
+            </div>
+            <ol id="wide_memberlist">
                 <li><a href="1.html">TAEIL</a></li>
                 <li><a href="2.html">JOHNNY</a></li>
                 <li><a href="3.html">TAEYONG</a></li>
@@ -88,6 +104,7 @@
                 <li><a href="9.html">MARK</a></li>
                 <li><a href="10.html">HAECHAN</a></li>
             </ol>
+
             <div id="grid_detail">
                 <img src="image/NCT_127_regular.jpg">
                 <div>
