@@ -1,124 +1,128 @@
- <!doctype html>
- <html>
-     <head>
-        <title>WEB1 - NCT127</title>
-        <meta charset="utf-8">
-        <style>
-            body{
-                margin:0px;
-            }
-            #grid_full{
-                display: grid;
-                grid-template-columns: 150px 1fr;
-            }
-            #grid_detail{
-                grid-template-columns: 1fr 500px;
-            }
-            h1{
-                font-size: 45px;
-                text-align: center;
-                border-bottom:1px solid gray;
-                margin: 0px;
-                padding: 15px;
-            }
-            a {
-                color:black;
-                text-decoration: none;
-            }
-            #grid_detail img{
-                width: 635px;
-                float: left;
-                padding-top: 15px;
-                padding-right: 15px;
-            }
-            #wide_memberlist{
-                border-right: 1px solid gray;
-                width:80px;
-                margin: 0px;
-                padding: 35px;
-                padding-right: 15px;
-            }
-            #narrow_memberlist{
-                display: none;
-            }
-            #playlist{
-                display: block;
-            }
-            @media(max-width:1280px){
-            #grid_detail img{
-                    float:none;
-            }
-            }
+<!doctype html>
+<html>
+    <head>
+       <title>WEB1 - NCT127</title>
+       <meta charset="utf-8">
+       <style>
+           body{
+               margin:0px;
+           }
+           #grid_full{
+               display: grid;
+               grid-template-columns: 150px 1fr;
+           }
+           #grid_detail{
+               grid-template-columns: 1fr 500px;
+           }
+           h1{
+               font-size: 45px;
+               text-align: center;
+               border-bottom:1px solid gray;
+               margin: 0px;
+               padding: 15px;
+           }
+           a {
+               text-decoration: none;
+           }
+           #grid_detail img{
+               width: 635px;
+               float: left;
+               padding-top: 15px;
+               padding-right: 15px;
+           }
+           #wide_memberlist{
+               border-right: 1px solid gray;
+               width:80px;
+               margin: 0px;
+               padding: 35px;
+               padding-right: 15px;
+           }
+           #narrow_memberlist{
+               display: none;
+           }
+           #playlist{
+               display: block;
+           }
+           @media(max-width:1280px){
+           #grid_detail img{
+                   float:none;
+           }
+           }
 
-            @media(max-width:800px){
-            #grid_full{
-                display: block;
-            }
-            #grid_detail img{
-                width: 100%;
-                padding-top: 0px;
-                padding-right: 0px;
-            }
-            h1{
-                border-bottom: none;
-            }
-            #wide_memberlist{
-                display: none;
-            }
-            #narrow_memberlist{
-                display: block;
-                margin-left: 10px;
-                margin-bottom: 10px;
-            }
-            }
-        </style>
-    </head>
+           @media(max-width:800px){
+           #grid_full{
+               display: block;
+           }
+           #grid_detail img{
+               width: 100%;
+               padding-top: 0px;
+               padding-right: 0px;
+           }
+           h1{
+               border-bottom: none;
+           }
+           #wide_memberlist{
+               display: none;
+           }
+           #narrow_memberlist{
+               display: block;
+               margin-left: 10px;
+               margin-bottom: 10px;
+           }
+           }
+       </style>
+   </head>
 
 
-    <body>
-        <h1><a href="nct127.html" style="color:greenyellow;text-decoration:underline overline dotted">NCT 127</a></h1>
-        <div id="grid_full">
-            <div id="narrow_memberlist">
-                <a href="1.html">TAEIL</a>  /
-                <a href="2.html">JOHNNY</a> /
-                <a href="3.html">TAEYONG</a>    /
-                <a href="4.html">YUTA</a>   /
-                <a href="5.html">DOYOUNG</a></br>
-                <a href="6.html">JAEHYUN</a>    /
-                <a href="7.html">WINWIN</a> /
-                <a href="8.html">JUNGWOO</a>    /
-                <a href="9.html">MARK</a>   /
-                <a href="10.html">HAECHAN</a>
-            </div>
-            <ol id="wide_memberlist">
-                <li><a href="1.html">TAEIL</a></li>
-                <li><a href="2.html">JOHNNY</a></li>
-                <li><a href="3.html">TAEYONG</a></li>
-                <li><a href="4.html">YUTA</a></li>
-                <li><a href="5.html">DOYOUNG</a></li>
-                <li><a href="6.html">JAEHYUN</a></li>
-                <li><a href="7.html">WINWIN</a></li>
-                <li><a href="8.html">JUNGWOO</a></li>
-                <li><a href="9.html">MARK</a></li>
-                <li><a href="10.html">HAECHAN</a></li>
-            </ol>
+   <body>
+       <input type="button" value="night" onclick="
+       document.querySelector('body').style.backgroundColor='black';
+       document.querySelector('body').style.color='white'";>
+       <input type="button" value="day" onclick="
+       document.querySelector('body').style.backgroundColor='white';
+       document.querySelector('body').style.color='black';">
+       <h1><a href="nct127.html" style="color:greenyellow;text-decoration:underline overline dotted">NCT 127</a></h1>
+       <div id="grid_full">
+           <div id="narrow_memberlist">
+               <a href="1.html">TAEIL</a>  /
+               <a href="2.html">JOHNNY</a> /
+               <a href="3.html">TAEYONG</a>    /
+               <a href="4.html">YUTA</a>   /
+               <a href="5.html">DOYOUNG</a></br>
+               <a href="6.html">JAEHYUN</a>    /
+               <a href="7.html">WINWIN</a> /
+               <a href="8.html">JUNGWOO</a>    /
+               <a href="9.html">MARK</a>   /
+               <a href="10.html">HAECHAN</a>
+           </div>
+           <ol id="wide_memberlist">
+               <li><a href="1.html">TAEIL</a></li>
+               <li><a href="2.html">JOHNNY</a></li>
+               <li><a href="3.html">TAEYONG</a></li>
+               <li><a href="4.html">YUTA</a></li>
+               <li><a href="5.html">DOYOUNG</a></li>
+               <li><a href="6.html">JAEHYUN</a></li>
+               <li><a href="7.html">WINWIN</a></li>
+               <li><a href="8.html">JUNGWOO</a></li>
+               <li><a href="9.html">MARK</a></li>
+               <li><a href="10.html">HAECHAN</a></li>
+           </ol>
 
-            <div id="grid_detail">
-                <img src="image/NCT_127_regular.jpg">
-                <div>
-                    <p>NCT stands for <strong>Neo Culture Technology</strong>.<br>
-                        '127' of <a href="https://www.smtown.com/search?keyword=NCT%20127&star_idx=10033" 
-                        target="_blank" title="Go to SMTOWN page for NCT127 profiles">NCT127</a> means <u>longitude of Seoul</u>.</p>
-                        <p>Their music video 'Kick It' exceeded 10 billion views on YouTube.</br>
-                        <iframe src="https://www.youtube.com/embed/2OvyA2__Eas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>          
-                </div>
-                <p id="playlist">
-                    playlist
-                </p>
-            </div>
-        </div>
-       
-    </body>
+           <div id="grid_detail">
+               <img src="image/NCT_127_regular.jpg">
+               <div>
+                   <p>NCT stands for <strong>Neo Culture Technology</strong>.<br>
+                       '127' of <a href="https://www.smtown.com/search?keyword=NCT%20127&star_idx=10033" 
+                       target="_blank" title="Go to SMTOWN page for NCT127 profiles">NCT127</a> means <u>longitude of Seoul</u>.</p>
+                       <p>Their music video 'Kick It' exceeded 10 billion views on YouTube.</br>
+                       <iframe src="https://www.youtube.com/embed/2OvyA2__Eas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>          
+               </div>
+               <p id="playlist">
+                   playlist
+               </p>
+           </div>
+       </div>
+      
+   </body>
 </html>
 
- 
