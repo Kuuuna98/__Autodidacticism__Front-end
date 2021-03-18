@@ -5,8 +5,13 @@
     </head>
     <body>
         <label class ="switch">
-            <input type="checkbox"/>
+            <input type="checkbox" onclick="toggle(this)">
             <span class="slider round"></span>
         </label>
+        <script>
+            function toggle(element){
+                console.log(element.checked);
+            }
+        </script>
     </body>
 </html>
