@@ -9,12 +9,24 @@
         <link rel="stylesheet" type="text/css" href="toggle.css"/>
     </head>
     <body>
-        <input type="button" value="night" onclick="
-        document.querySelector('body').style.backgroundColor='#1A1A1A';
-        document.querySelector('body').style.color='#C6C5C5';">
-       <input type="button" value="day" onclick="
-       document.querySelector('body').style.backgroundColor='white';
-       document.querySelector('body').style.color='black';">
+        <div style="margin-top: 3px; margin-left: 3px;">
+            Dark mode
+            <label class ="switch">
+                <input type="checkbox" onclick="toggle(this)">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <script>
+            function toggle(element){
+                if(element.checked){
+                    document.querySelector('body').style.backgroundColor='#1A1A1A';
+                    document.querySelector('body').style.color='#C6C5C5';
+                }else{
+                    document.querySelector('body').style.backgroundColor='white';
+                    document.querySelector('body').style.color='black';
+                }
+            }
+        </script>
         <h1 id="nct127"><a href="nct127.html">NCT 127</a></h1>
         <div id="grid_full">
             <div id="narrow_memberlist">
