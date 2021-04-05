@@ -18,12 +18,32 @@
         </div>
         <script>
             function toggle(element){
+                var target = 5;
+                var container_wide = document.querySelector('#wide_memberlist');
+                var container_narrow = document.querySelector('#narrow_memberlist');
+                var matches_wide = container_wide.querySelectorAll('a');
+                var matches_narrow = container_narrow.querySelectorAll('a');
+
                 if(element.checked){
                     document.querySelector('body').style.backgroundColor='#1A1A1A';
                     document.querySelector('body').style.color='#C6C5C5';
+                    document.querySelector('#nct127').querySelector('a').style.color='#C6C5C5';
+                    for(var i=0; i<matches_wide.length;i++){
+                        if(i!=target){
+                            matches_wide[i].style.color='#C6C5C5';
+                            matches_narrow[i].style.color='#C6C5C5';
+                        }
+                    }
                 }else{
                     document.querySelector('body').style.backgroundColor='white';
                     document.querySelector('body').style.color='black';
+                    document.querySelector('#nct127').querySelector('a').style.color='black';
+                    for(var i=0; i<matches_wide.length;i++){
+                        if(i!=target){
+                            matches_wide[i].style.color='black';
+                            matches_narrow[i].style.color='black';
+                        }
+                    }
                 }
             }
         </script>
