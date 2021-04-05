@@ -18,12 +18,14 @@
         </div>
         <script>
             function toggle(element){
-                if(element.checked){
+               if(element.checked){
                     document.querySelector('body').style.backgroundColor='#1A1A1A';
                     document.querySelector('body').style.color='#C6C5C5';
+                    document.querySelector('a').style.color='#C6C5C5';
                 }else{
                     document.querySelector('body').style.backgroundColor='white';
                     document.querySelector('body').style.color='black';
+                    document.querySelector('a').style.color='black';
                 }
             }
         </script>
@@ -57,7 +59,7 @@
                 <h1 id="name">TAEIL (문태일)</h1>
                 <img src="image/태일.jpeg">
                 <p>
-                    <a href="https://www.smtown.com/search?type=&keyword=%ED%83%9C%EC%9D%BC&star_idx=10596" target="_blank">Taeil</a> is the eldest in NCT127.<br>
+                    <a id="active" href="https://www.smtown.com/search?type=&keyword=%ED%83%9C%EC%9D%BC&star_idx=10596" target="_blank">Taeil</a> is the eldest in NCT127.<br>
                     He's the main vocal of NCT127.
                     His nationality is Korea.<br>
                 </p>
