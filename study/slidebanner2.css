@@ -1,0 +1,93 @@
+#slider {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+}
+
+#slider .cnt>li {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 300px;
+    color: #fff;
+}
+
+#slider .cnt>li:nth-child(1) {
+    background-color: red;
+}
+
+#slider .cnt>li:nth-child(2) {
+    background-color: orange;
+}
+
+#slider .cnt>li:nth-child(3) {
+    background-color: green;
+}
+
+#slider .cnt>li:nth-child(4) {
+    background-color: blue;
+}
+
+#slider .btn>button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    padding: 5px;
+    background-color: #fff;
+}
+
+#slider .btn .prev {
+    left: 5px;
+}
+
+#slider .btn .next {
+    right: 5px;
+}
+
+#slider .auto>button {
+    display: none;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    border: 0;
+    padding: 5px;
+    background-color: #fff;
+}
+
+#slider .indi {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+#slider .indi:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#slider .indi>li {
+    float: left;
+    margin-left: 5px;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    opacity: .5;
+    background-color: #fff;
+}
+
+#slider .indi>li.on {
+    opacity: 1
+}
+
+#slider .indi>li:first-child {
+    margin-left: 0
+}
