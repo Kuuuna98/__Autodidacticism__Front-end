@@ -22,5 +22,24 @@
                 <button type="button" class="play">play</button>
             </div>
         </div>
+        <script>
+            window.addEventListener('load', function(){
+                var ITEM_NUM = 3, AUTO_TIME = 1000,
+                slide = document.getElementById('slider'),
+                indi = document.createElement('ul'),
+                slide_cnt = slide.getElementsByClassName('cnt'),
+                slide_cnt_item = slide_cnt[0].getElementsByTagName('li'),
+
+                prev_btn = slide.getElementsByClassName('prev'),
+                next_btn = slide.getElementsByClassName('next'),
+                play_btn = slide.getElementsByClassName('play'),
+                stop_btn = slide.getElementsByClassName('stop'),
+
+                play_set = null,
+                before = 0,
+                after = 0,
+                moveIng = false;
+});
+        </script>
     </body>
 </html> 
