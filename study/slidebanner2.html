@@ -6,7 +6,6 @@
         <link rel="stylesheet" type="text/css" href="slidebanner2.css"/>
     </head> 
     <body>
-        
         <div id="slider">
             <ul class="cnt">
                 <li>1</li>
@@ -39,7 +38,22 @@
                 before = 0,
                 after = 0,
                 moveIng = false;
-});
+
+                // init
+                slide_cnt_item[0].style.left  = 0;
+                play_btn[0].style.display  = 'block';
+                var indi = document.createElement('ul');
+                for(var i = 0;i < slide_cnt_item.length;i++){
+                    indi.innerHTML += '<li></li>';
+                };
+                indi.classList.add('indi');
+                indi.children[0].classList.add('on');
+                slide.append(indi);
+                
+                for(var j = 0;j < indi.children.length;j++){
+                    indiClick(j);
+                };
+            });
         </script>
     </body>
 </html> 
