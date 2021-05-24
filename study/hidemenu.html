@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <input type="checkbox" class="hide_btn" onclick="hide(this)">hide</input>
+        <ol id="menu" style="display:block; width: 100px; border-right: 1px solid gray;padding-left: 25px;">
+            <li>
+                <a href="hidemenu.html">dog</a>
+                <ul>
+                    <li><a href="hidemenu.html">rami</a></li>
+                    <li><a href="hidemenu.html">nana</a></li>
+                    <li><a href="hidemenu.html">dino</a></li>
+                </ul>
+            </li>
+            <li><a href="hidemenu.html">cat</a></li>
+            <li><a href="hidemenu.html">tiger</a></li>
+        </ol>
+        <script>
+ 
+
+            function hide(element){
+                var menu = document.querySelector('#menu');
+
+                if(element.checked){
+                    document.querySelector('#menu').style.display='none';
+                }else{
+                    document.querySelector('#menu').style.display='block';
+                }
+            }
+        </script>
+    </body>
+</html>
