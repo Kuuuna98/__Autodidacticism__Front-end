@@ -49,10 +49,40 @@
                 indi.classList.add('indi');
                 indi.children[0].classList.add('on');
                 slide.append(indi);
-                
+
                 for(var j = 0;j < indi.children.length;j++){
                     indiClick(j);
                 };
+
+                // initEvnet
+                next_btn[0].addEventListener('click', function(e){
+                    if(!moveIng){
+                        after++;
+                        if(after >= slide_cnt_item.length){
+                            after = 0;
+                        };
+                        before = after;
+                    };
+                });
+                
+                prev_btn[0].addEventListener('click', function(e){
+                    if(!moveIng){
+                        after--;
+                        if(after < 0){
+                            after = slide_cnt_item.length - 1;
+                        };
+                        before = after;
+                    };
+                });
+
+                play_btn[0].addEventListener('click', function(){
+                    play_btn[0].style.display = 'none';
+                    stop_btn[0].style.display = 'block';
+                });
+                stop_btn[0].addEventListener('click', function(){
+                    play_btn[0].style.display = 'block';
+                    stop_btn[0].style.display = 'none';
+                });
             });
         </script>
     </body>
