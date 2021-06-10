@@ -80,38 +80,18 @@
 
 
    <body>
-    <div style="margin-top: 3px; margin-left: 3px;">
+    <div style="margin-top: 3px; margin-left: 3px; float:left;">
         Dark mode
         <label class ="switch">
             <input type="checkbox" onclick="toggle(this)">
             <span class="slider round"></span>
         </label>
     </div>
-    <script>
-        function toggle(element){
-            var container_wide = document.querySelector('#wide_memberlist');
-            var container_narrow = document.querySelector('#narrow_memberlist');
-            var matches_wide = container_wide.querySelectorAll('a');
-            var matches_narrow = container_narrow.querySelectorAll('a');
-
-            if(element.checked){
-                document.querySelector('body').style.backgroundColor='#1A1A1A';
-                document.querySelector('body').style.color='#C6C5C5';
-                for(var i=0; i<matches_wide.length;i++){
-                    matches_wide[i].style.color='#C6C5C5';
-                    matches_narrow[i].style.color='#C6C5C5';
-                }
-            }else{
-                document.querySelector('body').style.backgroundColor='white';
-                document.querySelector('body').style.color='black';
-                for(var i=0; i<matches_wide.length;i++){
-                    matches_wide[i].style.color='black';
-                    matches_narrow[i].style.color='black';
-                }
-            }
-        }
-    </script>
+    <div style="margin-top: 3px; margin-right: 3px; float:right;">
+        <a href="login.html" style="color:black;">login</a>
+    </div>
        <h1><a href="nct127.html" style="color:greenyellow;text-decoration:underline overline dotted">NCT 127</a></h1>
+       
        <div id="grid_full">
            <div id="narrow_memberlist">
                <a href="1.html">TAEIL</a>  /
@@ -154,7 +134,30 @@
                 우산(Love Song) - nct127<br>Welcome To My Playground - nct127</div>
             </div>
        </div>
-      
+       <script>
+        function toggle(element){
+            var container_wide = document.querySelector('#wide_memberlist');
+            var container_narrow = document.querySelector('#narrow_memberlist');
+            var matches_wide = container_wide.querySelectorAll('a');
+            var matches_narrow = container_narrow.querySelectorAll('a');
+
+            if(element.checked){
+                document.querySelector('body').style.backgroundColor='#1A1A1A';
+                document.querySelector('body').style.color='#C6C5C5';
+                for(var i=0; i<matches_wide.length;i++){
+                    matches_wide[i].style.color='#C6C5C5';
+                    matches_narrow[i].style.color='#C6C5C5';
+                }
+            }else{
+                document.querySelector('body').style.backgroundColor='white';
+                document.querySelector('body').style.color='black';
+                for(var i=0; i<matches_wide.length;i++){
+                    matches_wide[i].style.color='black';
+                    matches_narrow[i].style.color='black';
+                }
+            }
+        }
+    </script>
    </body>
 </html>
 
