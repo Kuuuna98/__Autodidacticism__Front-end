@@ -3,17 +3,20 @@
     <head>
         <meta charset="utf-8">
         <title></title>
+        <link rel="stylesheet" type="text/css" href="hidemenu.css"/>
     </head>
     <body>
         <input type="checkbox" class="hide_btn" onclick="hide(this)">hide</input>
         <ol id="menu" style="display:block; width: 100px; border-right: 1px solid gray;padding-left: 25px;">
             <li>
-                <a href="hidemenu.html">dog</a>
-                <ul>
-                    <li><a href="hidemenu.html">rami</a></li>
-                    <li><a href="hidemenu.html">nana</a></li>
-                    <li><a href="hidemenu.html">dino</a></li>
-                </ul>
+                <div class="dropdown">
+                    <a class="dropdown-btn">dog</a>
+                    <div class="dropdown-content">
+                      <a href="#">rami</a>
+                      <a href="#">nana</a>
+                      <a href="#">dino</a>
+                    </div>
+                  </div>
             </li>
             <li><a href="hidemenu.html">cat</a></li>
             <li><a href="hidemenu.html">tiger</a></li>
