@@ -35,31 +35,21 @@ a {
     padding: 35px;
 }
 #narrow_memberlist{
-    display: none;
+    background-color: #f1f1f1;
+    display: block;
+    margin-left: 1px;
+    padding: 5px 10px;
 }
 #active {
     color:greenyellow;
     text-decoration: none;
 }
 @media(max-width:800px){
-#nct127{
-    border-bottom:none;
-}
-#grid_full{
-    display: block;
-}
+
 #grid_detail img{
     float:none;
 }
 #grid_detail p{
     padding-left: 10px;
-}
-#wide_memberlist{
-    display: none;
-}
-#narrow_memberlist{
-    display: block;
-    margin-left: 10px;
-    margin-bottom: 10px;
 }
 }
