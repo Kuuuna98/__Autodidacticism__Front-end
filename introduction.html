@@ -3,6 +3,7 @@
     <head>
        <title>WEB1 - NCT127</title>
        <meta charset="utf-8">
+       <link rel="stylesheet" type="text/css" href="dropdown.css"/>
        <link rel="stylesheet" type="text/css" href="toggle.css"/>
        <style>
            body{
@@ -29,9 +30,6 @@
            #wide_memberlist a{
                color:black;
            }
-           #narrow_memberlist a{
-               color:black;
-           }
            #grid_detail img{
                width: 635px;
                float: left;
@@ -45,9 +43,6 @@
                padding: 35px;
                padding-right: 15px;
            }
-           #narrow_memberlist{
-               display: none;
-           }
            @media(max-width:1280px){
            #grid_detail img{
                    float:none;
@@ -55,24 +50,8 @@
            }
 
            @media(max-width:800px){
-           #grid_full{
-               display: block;
-           }
            #grid_detail img{
                width: 100%;
-               padding-top: 0px;
-               padding-right: 0px;
-           }
-           h1{
-               border-bottom: none;
-           }
-           #wide_memberlist{
-               display: none;
-           }
-           #narrow_memberlist{
-               display: block;
-               margin-left: 10px;
-               margin-bottom: 10px;
            }
            }
        </style>
@@ -93,30 +72,26 @@
        <h1><a href="nct127.html" style="color:greenyellow;text-decoration:underline overline dotted">NCT 127</a></h1>
        
        <div id="grid_full">
-           <div id="narrow_memberlist">
-               <a href="member/1.html">TAEIL</a>  /
-               <a href="member/2.html">JOHNNY</a> /
-               <a href="member/3.html">TAEYONG</a>    /
-               <a href="member/4.html">YUTA</a>   /
-               <a href="member/5.html">DOYOUNG</a></br>
-               <a href="member/6.html">JAEHYUN</a>    /
-               <a href="member/7.html">WINWIN</a> /
-               <a href="member/8.html">JUNGWOO</a>    /
-               <a href="member/9.html">MARK</a>   /
-               <a href="member/10.html">HAECHAN</a>
-           </div>
-           <ol id="wide_memberlist">
-               <li><a href="member/1.html">TAEIL</a></li>
-               <li><a href="member/2.html">JOHNNY</a></li>
-               <li><a href="member/3.html">TAEYONG</a></li>
-               <li><a href="member/4.html">YUTA</a></li>
-               <li><a href="member/5.html">DOYOUNG</a></li>
-               <li><a href="member/6.html">JAEHYUN</a></li>
-               <li><a href="member/7.html">WINWIN</a></li>
-               <li><a href="member/8.html">JUNGWOO</a></li>
-               <li><a href="member/9.html">MARK</a></li>
-               <li><a href="member/10.html">HAECHAN</a></li>
-           </ol>
+           <ul id="wide_memberlist">
+               <li><a href="introduction.html">INTRO</a></li>
+               <li>
+                <div class="dropdown">
+                    <a class="dropdown-btn">MEMBER</a>
+                    <div class="dropdown-content">
+                        <a href="member/1.html">TAEIL</a>
+                        <a href="member/2.html">JOHNNY</a>
+                        <a href="member/3.html">TAEYONG</a>
+                        <a href="member/4.html">YUTA</a>
+                        <a href="member/5.html">DOYOUNG</a>
+                        <a href="member/6.html">JAEHYUN</a>
+                        <a href="member/7.html">WINWIN</a>
+                        <a href="member/8.html">JUNGWOO</a>
+                        <a href="member/9.html">MARK</a>
+                        <a href="member/10.html">HAECHAN</a>
+                    </div>
+                  </div>
+                </li>
+           </ul>
 
            <div id="grid_detail">
                <img src="image/NCT_127_regular.jpg">
@@ -137,23 +112,19 @@
        <script>
         function toggle(element){
             var container_wide = document.querySelector('#wide_memberlist');
-            var container_narrow = document.querySelector('#narrow_memberlist');
             var matches_wide = container_wide.querySelectorAll('a');
-            var matches_narrow = container_narrow.querySelectorAll('a');
 
             if(element.checked){
                 document.querySelector('body').style.backgroundColor='#1A1A1A';
                 document.querySelector('body').style.color='#C6C5C5';
                 for(var i=0; i<matches_wide.length;i++){
                     matches_wide[i].style.color='#C6C5C5';
-                    matches_narrow[i].style.color='#C6C5C5';
                 }
             }else{
                 document.querySelector('body').style.backgroundColor='white';
                 document.querySelector('body').style.color='black';
                 for(var i=0; i<matches_wide.length;i++){
                     matches_wide[i].style.color='black';
-                    matches_narrow[i].style.color='black';
                 }
             }
         }
