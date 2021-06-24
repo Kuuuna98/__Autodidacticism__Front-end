@@ -25,28 +25,27 @@
                 var matches_wide = container_wide.querySelectorAll('a');
                 var matches_narrow = container_narrow.querySelectorAll('a');
 
+                var menu_color='black';
+                var backgroundmenu_color='white';
+                container_narrow.style.backgroundColor='#F1F1F1';
+
                 if(element.checked){
-                    document.querySelector('body').style.backgroundColor='#1A1A1A';
-                    document.querySelector('body').style.color='#C6C5C5';
-                    document.querySelector('#nct127').querySelector('a').style.color='#C6C5C5';
-                    container_narrow.style.backgroundColor='#1A1A1A';
-                    for(var i=0; i<matches_wide.length;i++){
-                        matches_wide[i].style.color='#C6C5C5';
-                        if(i!=target){
-                            matches_narrow[i].style.color='#C6C5C5';
-                        }
+                    menu_color='#C6C5C5';
+                    backgroundmenu_color='#1A1A1A';
+                    container_narrow.style.backgroundColor=backgroundmenu_color;
+                }
+
+                document.querySelector('body').style.backgroundColor=backgroundmenu_color;
+                document.querySelector('body').style.color=menu_color;
+                document.querySelector('#nct127').querySelector('a').style.color=menu_color;
+
+                for(var i=0; i<matches_narrow.length;i++){
+                    if(i!=target){
+                        matches_narrow[i].style.color=menu_color;
                     }
-                }else{
-                    document.querySelector('body').style.backgroundColor='white';
-                    document.querySelector('body').style.color='black';
-                    document.querySelector('#nct127').querySelector('a').style.color='black';
-                    container_narrow.style.backgroundColor='#F1F1F1';
-                    for(var i=0; i<matches_wide.length;i++){
-                        matches_wide[i].style.color='black';
-                        if(i!=target){
-                            matches_narrow[i].style.color='black';
-                        }
-                    }
+                }
+                for(var i=0; i<matches_wide.length-matches_narrow.length;i++){
+                    matches_wide[i].style.color=menu_color;
                 }
             }
         </script>
