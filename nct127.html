@@ -71,6 +71,7 @@
     </div>
        <h1><a href="nct127.html" style="color:greenyellow;text-decoration:underline overline dotted">NCT 127</a></h1>
        
+       <input type="checkbox" class="hide_btn" onclick="hide(this)">hide</input>
        <div id="grid_full">
            <ul id="wide_memberlist">
                <li><a href="introduction.html">INTRO</a></li>
@@ -131,6 +132,16 @@
                 }
             }
         }
+
+        function hide(element){
+                var menu = document.querySelector('#wide_memberlist');
+
+                if(element.checked){
+                    document.querySelector('#wide_memberlist').style.display='none';
+                }else{
+                    document.querySelector('#wide_memberlist').style.display='block';
+                }
+            }
     </script>
    </body>
 </html>
