@@ -48,8 +48,18 @@
                     matches_wide[i].style.color=menu_color;
                 }
             }
+            function hide(element){
+                var menu = document.querySelector('#wide_memberlist');
+
+                if(element.checked){
+                    document.querySelector('#wide_memberlist').style.display='none';
+                }else{
+                    document.querySelector('#wide_memberlist').style.display='block';
+                }
+            }
         </script>
         <h1 id="nct127"><a href="../nct127.html">NCT 127</a></h1>
+       <input type="checkbox" class="hide_btn" onclick="hide(this)">hide</input>
         <div id="grid_full">
             <ul id="wide_memberlist">
                 <li><a href="../introduction.html">INTRO</a></li>
